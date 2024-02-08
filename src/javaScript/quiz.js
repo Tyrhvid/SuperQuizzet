@@ -33,7 +33,13 @@ for (const question of questions) {
   falseBtn.classList.add("btn", "btn-danger", "mx-1", "col");
 
   trueBtn.innerText = "True";
+  trueBtn.onclick = ()=> {
+    console.log("Du tryckte på true!");
+  };
   falseBtn.innerText = "False";
+  falseBtn.onclick= ()=>{
+    console.log("Du tryckte på false!");
+  };
 
   cardTitle.innerText = question.statement;
 
